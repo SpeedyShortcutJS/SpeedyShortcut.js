@@ -436,4 +436,12 @@ isInViewport = function ( el ) {
         distance.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
         distance.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
+},
+getBorderWidth() {
+    var w = window.innerWidth,
+    	h = window.innerHeight,
+	hypotenuse = Math.sqrt(w * w + h * h),
+	borderWidth = window.hypotenuse/74;
+
+    return borderWidth;
 };
